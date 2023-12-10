@@ -1,0 +1,7 @@
+.app_wrap {
+  width: 100vw;
+  min-height: 100vh;
+
+  background: -webkit-linear-gradient(87deg, #9f2ef4,#f97d64,#ffcd42);
+  background: linear-gradient(87deg, #9f2ef4,#f97d64,#ffcd42);
+}

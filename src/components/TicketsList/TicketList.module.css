@@ -1,0 +1,120 @@
+.ticket_info_block {
+  width: 30%;
+  /* min-width: 390px; */
+  height: 100%;
+
+  padding: 10px;
+
+  background-color: #f1f1f1;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+}
+
+.tickets_list_block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.tickets_list {
+  /* background-color: green; */
+  width: 100%;
+  height: 70%;
+  padding: 10px;
+
+  border-radius: 10px 10px 0 0;
+
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 1), 
+                    1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.ticket_empty {
+  color:grey;
+  user-select: none;
+}
+
+.user_info {
+  /* background-color: red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  width: 100%;
+  height: 30%;
+  font-size: .9em;
+}
+
+.total_price {
+  align-self: end;
+  opacity: 0;
+}
+
+.total_price_show {
+  opacity: 1;
+}
+
+
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bank_card_input {
+  padding: 0 8px;
+  width: 170px;
+  height: 36px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid transparent;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+.buy_ticket_btn {
+  align-self: center;
+  width: 120px;
+  height: 50px;
+  position: relative;
+}
+
+.buy_ticket_btn button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .ticket_info_block {
+    width: 100%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 991px) {
+  .ticket_info_block {
+    width: 90%;
+  }
+
+
+}
