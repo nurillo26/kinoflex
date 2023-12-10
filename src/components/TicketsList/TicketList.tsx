@@ -48,6 +48,8 @@ export const TicketList:FC<TicketListProps> = ({selectedSeats, selectedMovie, se
 
   const handleButtonClick = (element: React.MouseEvent<Element, MouseEvent>, next: () => void) => {  
     buyTickets();
+    console.log(element);
+    
 
     try {
       axios.post('https://kinoflex-3b178103f73d.herokuapp.com/send-sms', {
