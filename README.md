@@ -1,31 +1,44 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# КиноФлекс
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Учебный проект на React, с сервером на Node.js Express и базой данных MongoDB.
 
-Currently, two official plugins are available:
+Деплой проекта доступен по ссылке [https://kinoflex.netlify.app/](https://kinoflex.netlify.app/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Описание
 
-## Expanding the ESLint configuration
+Проект "КиноФлекс" создан для демонстрации основных навыков разработки на React с использованием сервера на Node.js Express и базы данных MongoDB.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Функционал
 
-- Configure the top-level `parserOptions` property like this:
+### Главная страница
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Список всех доступных фильмов.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-=======
-# kinoflex
->>>>>>> 27415cea9f7600c6cc96ced4d7fd0c32fb3cae04
+### Страница фильма
+
+- Подробное описание фильма с описанием, фото, трейлером, списком актеров и выбором сеанса.
+
+### Выбор сеанса
+
+- 4 сеанса на выбор.
+- При выборе сеанса открывается всплывающее окно с схемой зала и списком выбранных мест.
+
+### Покупка билетов
+
+- Поля для ввода телефона и номера карты.
+- Кнопка "Купить" активна только при наличии выбранных мест, введенного номера телефона и номера карты.
+- После подтверждения покупки отправляется SMS-сообщение на указанный номер с информацией о приобретенных местах.
+
+## API
+
+Проект использует два API:
+
+- [TMDb](https://www.themoviedb.org/) для получения информации о фильмах.
+- [Twilio](https://www.twilio.com/) для отправки SMS-уведомлений о покупке билетов.
+
+## Запуск проекта локально
+- Установка зависимостей
+  ```npm i
+
+- Запуск проекта
+  ```npm run dev
